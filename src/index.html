@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <title>my first website</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <header class="header">
         <nav class="header__menu menu">
@@ -12,44 +14,113 @@
                 <li class="menu__list-item"><a href="#" class="menu__list-item-link">Информация</a></li>
                 <li class="menu__list-item"><a href="#" class="menu__list-item-link">Фото и Видео</a></li>
                 <li class="menu__list-item"><a href="#" class="menu__list-item-link">
-                    <img class="header__menu-logo" src="#" alt="логотип сайта"></a></li>
+                        <img class="header__menu-logo" src="#" alt="логотип сайта"></a></li>
                 <li class="menu__list-item"><a href="#" class="menu__list-item-link">Карта штата</a></li>
                 <li class="menu__list-item"><a href="#" class="menu__list-item-link">Гостиницы</a></li>
             </ul>
         </nav>
     </header>
     <main class="main">
-        <section class="firstScreen section">
+        <section class="section__firstScreen section">
             <div class="firstScreen__wrapper section__wrapper">
-                <p class="firstScreen__subtitle"><Span class="firstScreen__subtitle--big">Welcome</Span>to the gorgeous</p>
+                <p class="firstScreen__subtitle"><Span class="firstScreen__subtitle--big">Welcome</Span>to the gorgeous
+                </p>
                 <h1 class="firstScreen__title">Sedona</h1>
                 <p class="firstSreen__slogan">"Because the Grand Canyon sucks!"</p>
             </div>
         </section>
         <section class="section section__attractions">
-            <h2 class="section__title--small section__title">Седона - небольшой городок в Аризоне, заслуживщий большего!</h2>
+            <h2 class="section__title--small section__title">Седона - небольшой городок в Аризоне, заслуживщий большего!
+            </h2>
             <p class="section__description">Рассмотрим 5 причин, по которым седона круче, чем гранд каньон!</p>
             <ul class="attractions__list">
                 <li class="attractions__list-item attraction__list-item--pic">
                     <div class="item__wrapper">
-                        <div class="item__wrapper-backgroud"><img src="#" alt="очень креативная картинка" class="item__img"></div>
+                        <div class="item__wrapper-backgroud"><img src="#" alt="очень креативная картинка"
+                                class="item__img"></div>
                         <div class="item__wrapper-text item__wrapper-text--white">
-                            <h3 class="item__title"></h3>
-                            <p class="item__text"><span class="item__number"></span></p>
+                            <h3 class="item__title">Настоящий городок</h3>
+                            <p class="item__text"><span class="item__number">№1</span>Седона - не атракцион для
+                                туристов, там течет своя жизнь</p>
                         </div>
                     </div>
+                    <ul class="attractions__list-item__sublist sublist">
+                        <li class="attractions__list-item">
+                            <div class="item__wrapper-text">
+                                <h4 class="item__title">Жилье</h4>
+                                <p class="item__text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+                            </div>
+                        </li>
+                        <li class="attractions__list-item">
+                            <div class="item__wrapper-text">
+                                <h4 class="item__title">Еда</h4>
+                                <p class="item__text">Всегда заказывайте фирменный бургер,вы не разочаруется!</p>
+                            </div>
+                        </li>
+                        <li class="attractions__list-item">
+                            <div class="item__wrapper-text">
+                                <h4 class="item__title">Сувениры</h4>
+                                <p class="item__text">Не только китайского, но и местного производства</p>
+                            </div>
+                        </li>
+                    </ul>
                 </li>
                 <li class="attractions__list-item attraction__list-item--pic">
                     <div class="item__wrapper">
-                        <div class="item__wrapper-backgroud"><img src="#" alt="очень креативная картинка" class="item__img"></div>
+                        <div class="item__wrapper-backgroud"><img src="#" alt="очень креативная картинка"
+                                class="item__img"></div>
                         <div class="item__wrapper-text item__wrapper-text--white">
-                            <h3 class="item__title"></h3>
-                            <p class="item__text"><span class="item__number"></span></p>
+                            <h3 class="item__title">Там есть мост дьявола</h3>
+                            <p class="item__text"><span class="item__number">№2</span>Да, по нему можно пройти! Если
+                                конечно вы осмелитесь</p>
                         </div>
+                    </div>
+                </li>
+                <li class="attractions__list-item">
+                    <div class="item__wrapper-text">
+                        <h3 class="item__title">Небольшая площадь</h3>
+                        <p class="item__text"><span class="item__number">№3</span>Все достопримечательности находятся
+                            очень близко</p>
+                    </div>
+                </li>
+                <li class="attractions__list-item">
+                    <div class="item__wrapper-text">
+                        <h3 class="item__title">Красивая дорога</h3>
+                        <p class="item__text"><span class="item__number">№4</span>Ехать в седону из ласвегаса совсем не
+                            скучно!</p>
+                    </div>
+                </li>
+                <li class="attractions__list-item">
+                    <div class="item__wrapper-text">
+                        <h3 class="item__title">Мало туристов</h3>
+                        <p class="item__text"><span class="item__number">№5</span>Большинство едет в гранд каньон и
+                            толпится там</p>
                     </div>
                 </li>
             </ul>
         </section>
-        </main>
+        <section class="section section__hotel">
+            <h2 class="section__hotel-title">Заинтересовались?</h2>
+            <p class="section__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+            <button class="button">Поиск гостиницы в седоне</button>
+        </section>
+        <section class="section section__map"><img src="#" alt="карта" class="img-map"></section>
+    </main>
+    <footer class="footer">
+        <span class="hashtag">#visitsedona</span>
+        <ul class="social-list">
+            <li class="social-list__item">
+                <a href="#" class="social-list__img"><span class="visual-hiden">Вконтакте</span></a>
+            </li>
+            <li class="social-list__item">
+                <a href="#" class="social-list__img"><span class="visual-hiden">Фейсбук</span></a>
+            </li>
+            <li class="social-list__item">
+                <a href="#" class="social-list__img"><span class="visual-hiden">Ютуб</span></a>
+            </li>
+        </ul>
+        <span class="logo__text">Website by</span>
+    </footer>
 </body>
+
 </html>
